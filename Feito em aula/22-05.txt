@@ -1,0 +1,34 @@
+
+
+
+animal(id*, id_cabanha*, peso, id_galpão*, id_raca*, sexo, dt_nasc)
+
+raca(id*, descricao, nome)
+
+medicamento(id*, nome dt_validade, qtde)
+
+tratamento(id_medicamento*, id_animal*, posologia, dt_aplicacao)
+
+cabanha(id*, endereco, id_pessoa*)
+
+alimento(id*, descricao, nome, id_fornecedor*)
+
+nutricao(id*,qtde, data, id_alimento*,id_animal*)
+
+reproducao(id*, id_animal*, dt_separo)
+
+galpao(id*, nome, descricao, localizacao)
+
+pessoa(id*, endereco, telefone, email)
+
+pessoa_fisica(id_fisica*, id_pessoa*, cpf)
+
+pessoa_juridica(id_juridica*, id_pessoa*, cnpj)
+
+venda(id_venda*, id_produto*, qtde, valor_unit, total, dt_venda)
+
+compra(id_compra*, id_medicamento*, id_alimento*, qtde_compra, total, dt_compra, valor_unit, id_compra)
+
+fornecedor(id_fornecedor*, id_pessoa*, id_alimento*, id_medicamento*)
+
+
